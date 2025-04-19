@@ -17,18 +17,18 @@ import UserIcon from '../components/icons/User.astro';
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title="Porfolio de Pol Canet - Estudiante de CFGM Sistemas microinformaticos y redes" description="Conoce mis conocimientos y experiencias como estudiante">
+<Layout title="Porfolio de Pol Canet - Estudiante de CFGM Sistemas microinformaticos y redes" description="Explora mis conocimientos y experiencias como estudiante">
 	<main  class="px-4">
 		<Container class="pt-44 pb-32">
 			<img 
-    		class="rounded-full w-12 h-12 mb-4"
-    		src="https://cv.copernic.cat/pluginfile.php/2110/user/icon/boost/f1?rev=35029" 
-    		alt="pol foto">
+    		class="w-30 h-80 "
+    		src="/me/avatar3.webp" 
+    		alt="avatar foto">
 			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex gap-x-4 pb-6 lg:pb-10">
 				Hey, soy Pol <a href="https://www.linkedin.com/in/polcanet" 
 				target="_blank" 
 				rel="noopener"
-				class="flex justify-center items-center">
+				class="flex justify-center items-center pt-1 px-4">
 					<Badge>Disponible para trabajar</Badge></a>
 			</h1>
 			<h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
@@ -56,15 +56,15 @@ import UserIcon from '../components/icons/User.astro';
 			</h2>
 			<Experiencia />
 		</Container>
-		<Container>
-			<h2 id="proyectos" class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
+		<Container id="proyectos">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
 				<CodeIcon class="size-7" />
 				Proyectos
 			</h2>
 			<Proyectos />
 		</Container>
 		<Container id="sobre-mi">
-				<h2 id="proyectos" class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
+				<h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
 			  	<UserIcon class="size-8" />
 			 	Sobre mí
 				</h2>
