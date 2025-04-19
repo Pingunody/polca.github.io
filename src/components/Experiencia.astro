@@ -1,0 +1,31 @@
+
+---
+import ExperienciaItem from "./ExperienciaItem.astro"
+import LinkedIn from "./icons/LinkedIn.astro"
+const EXPERIENCIA = [
+{
+    title: "CFGM Sistemas Microinformaticos y Redes",
+    date: "Actualmente",
+    description: "Estudiantdo cursos de CFGM en sistemas microinformaticos y redes en el Institut Copernic de Terrassa.",
+    location: "Terrassa",
+    link: "https://copernic.cat/ca/cfgm-sistemes-microinformatics-i-xarxes",
+},
+{
+    title: "Programación y robótica",
+    date: "2017-2024",
+    description: "Des de los 9 años he estado programando y aprendiendo sobre robótica y programación a través de academias especializadas.",
+    location: "Codelearn",
+}
+
+]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+    {
+        EXPERIENCIA.map(experiencia => (
+            <li class="mb-10 ms-4">
+                <ExperienciaItem {...experiencia} />
+            </li>
+        ))
+    }                  
+</ol>
+
