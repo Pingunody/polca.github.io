@@ -1,23 +1,23 @@
 ---
 
-import CSS from "./icons/CSS.astro"
+import TailwindCSS from "./icons/TailwindCSS.astro"
 import HTML from "./icons/HTML.astro"
 import ASTRO from "./icons/AstroIcon.astro"
 
 const TAGS = {
-  CSS: {
-    name: "CSS",
-    class: "bg-[#5fe8c5]/20 text-white",
-    icon: CSS,
+  TailwindCSS: {
+    name: "Tailwind CSS",
+    class: "bg-white/20 text-white",
+    icon: TailwindCSS,
   },
   HTML: {
     name: "HTML",
-    class: "bg-[#003159]/20 text-white",
+    class: "bg-[#cc5fe8]/20 text-white",
     icon: HTML,
   },
   ASTRO: {
     name: "Astro",
-    class: "bg-[#cc5fe8]/20 text-white",
+    class: "bg-[#003159]/20 text-white",
     icon: ASTRO,
   },
 }
@@ -25,10 +25,10 @@ const PROJECTS = [
   {
     title: "Tienda online en desarrollo",
     description:
-      "Actualmente estoy planificando una tienda online para vender productos.",
+      "Actualmente planificando tienda online para la venta de productos. Creada desde cero con Astro y Tailwind CSS.",
     github: "https://github.com/pheralb/svgl",
-    image: "/proyectos/proyecto.webp",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.ASTRO,],
+    image: "/proyectos/tienda.webp",
+    tags: [TAGS.HTML, TAGS.TailwindCSS, TAGS.ASTRO,],
   }
 ]
 ---
